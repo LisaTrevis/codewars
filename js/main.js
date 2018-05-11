@@ -40,34 +40,38 @@
 // given an initital signature array of 3 numbers, return an array that starts with/includes the signature items for a total of n items
 // i.e. if signature = [ 2, 3, 4 ] and n = 6, return [ 2, 3, 4, 9, 16, 29 ] 
 
-function tribonacci(signature, n){
-	// create an empty newArray
-	let newArray = [];
+// function tribonacci(signature, n){
+// 	// create an empty newArray
+// 	let newArray = [];
 	
-	// edge case for n = 0
-	if(n === 0) {
-		return [];
-	}
+// 	// edge case for n = 0
+// 	if(n === 0) {
+// 		return [];
+// 	}
 
-	// edge case for n less than 3
-	if(n < 3) {
-		
-	}
-	
-	// push signature numbers to newArray
-	for ( i = 0; i < signature.length; i++ ) {
-		newArray.push(signature[i]);
-	} // console.log(newArray) returns [ 2, 3, 4 ]
+// 	// edge case for n less than 3
+// 	if(n < 3) {
+// 		// push n number of signature items to newArray
+// 		for ( i = 0; i < n; i++ ) {
+// 			newArray.push(signature[i]);
+// 		} return newArray;
+// 	}
 
-	// loop through n times
-	for ( i = 0; i < n-3; i++ ) {
-		var sum = newArray[i] + newArray[i+1] + newArray[i+2]
-		newArray.push(sum)
-	}
-	return newArray;
-}
+// 	// push signature items to newArray
+// 	for ( i = 0; i < signature.length; i++ ) {
+// 			newArray.push(signature[i]);
+// 		}
 
-// tribonacci([ 2, 3, 4 ], 6)
+// 	// loop through n-3 times and add sums to newArray
+// 	for ( i = 0; i < n-3; i++ ) {
+// 		var sum = newArray[i] + newArray[i+1] + newArray[i+2]
+// 		newArray.push(sum)
+// 	}
+// 	return newArray;
+// }
+
+
+
 
 
 
